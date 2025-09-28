@@ -75,15 +75,16 @@ export default function Page() {
   );
 }
 
-/* ---------------- NAV ---------------- */
+//* ---------------- NAV ---------------- */
 function Nav() {
   const sections = ["about", "education", "experience", "projects", "skills", "contact"];
 
   return (
     <header className="sticky top-0 z-50 border-b bg-white/80 dark:bg-slate-950/80 backdrop-blur">
       <div className="mx-auto max-w-6xl flex justify-between px-6 py-3 items-center">
+        {/* Updated from Natasha Jha → Portfolio */}
         <span className="font-bold text-xl text-indigo-600 dark:text-indigo-400 tracking-wide">
-          Natasha Jha
+          Portfolio
         </span>
         <nav className="flex gap-6 text-sm font-medium">
           {sections.map((id) => (
@@ -103,6 +104,7 @@ function Nav() {
     </header>
   );
 }
+
 
 
 /* ---------------- HERO ---------------- */
@@ -166,7 +168,6 @@ function Hero() {
     </section>
   );
 }
-
 
 /* ---------------- SECTION WRAPPER ---------------- */
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
